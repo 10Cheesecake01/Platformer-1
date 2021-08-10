@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="147" y="74">
+            <group eventID="1" id="-1">
+                <if comment="false" x="158" y="99">
+                    <group eventID="1" id="-1">
+                        <set-game-val-0 comment="false" x="169" y="137">
+                            <int id="0" val="Right"/>
+                        </set-game-val-0>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <int id="1" val="950"/>
+                    </less>
+                </if>
+                <if comment="false" x="158" y="169">
+                    <group eventID="1" id="-1">
+                        <set-game-val-0 comment="false" x="169" y="207">
+                            <int id="0" val="Left"/>
+                        </set-game-val-0>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <int id="1" val="1250"/>
+                    </more>
+                </if>
+                <if comment="false" x="158" y="239">
+                    <group eventID="1" id="-1">
+                        <set-dxy comment="false" x="169" y="269">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="-5"/>
+                        </set-dxy>
+                        <setanim comment="false" x="169" y="296">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Walk"/>
+                        </setanim>
+                        <scaleTo comment="false" x="169" y="323">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="-100"/>
+                            <int id="2" val="100"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="0"/>
+                        </scaleTo>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Left"/>
+                    </eq>
+                </if>
+                <if comment="false" x="158" y="362">
+                    <group eventID="1" id="-1">
+                        <set-dxy comment="false" x="169" y="392">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="5"/>
+                        </set-dxy>
+                        <setanim comment="false" x="169" y="419">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Walk"/>
+                        </setanim>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="Right"/>
+                    </eq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

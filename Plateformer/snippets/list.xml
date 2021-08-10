@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <snippet actorid="0" attachedevent="true" class="scripts.ActorEvents_0" classname="scripts.ActorEvents_0" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="0" name="ActorEvents_0" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Edge Detection" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="1" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Sound Track" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_2_2_Movement" classname="scripts.Design_2_2_Movement" desc="" description="" design="true" drawOrder="0" id="2" name="Movement" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Walk Speed" hidden="false" id="1" name="_WalkSpeed" order="1"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="OnGround" hidden="true" id="2" name="_OnGround" order="2"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="WasHit" hidden="true" id="3" name="_WasHit" order="3"/>
+        <blocks/>
+        <events>
+            <event displayName="Moving" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Hit an Enemy" enabled="true" id="2" name="collide" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_3_3_CameraMovement" classname="scripts.Design_3_3_CameraMovement" desc="" description="" design="true" drawOrder="0" id="3" name="Camera Movement" oid="-1" package="scripts" shared="false" type="scene">
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Camera Target" hidden="false" id="1" name="_CameraTarget" order="0"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Camera Dummy" hidden="true" id="2" name="_CameraDummy" order="1"/>
+        <blocks/>
+        <events>
+            <event displayName="Creating a Camera Position" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updating the Statement" enabled="true" id="2" name="step" order="2" repeats="false"/>
+        </events>
+    </snippet>
+    <snippet actorid="3" attachedevent="true" class="scripts.ActorEvents_3" classname="scripts.ActorEvents_3" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="4" name="ActorEvents_3" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="5" attachedevent="true" class="scripts.ActorEvents_5" classname="scripts.ActorEvents_5" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="5" name="ActorEvents_5" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_6_6_EnemyBehavior" classname="scripts.Design_6_6_EnemyBehavior" desc="" description="" design="true" drawOrder="0" id="6" name="Enemy Behavior" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Start X" hidden="true" id="1" name="_StartX" order="1"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Start Y" hidden="true" id="2" name="_StartY" order="2"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Stop X" hidden="false" id="3" name="_StopX" order="3"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Stop Y" hidden="false" id="4" name="_StopY" order="4"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Moving Speed" hidden="false" id="5" name="_MovingSpeed" order="5"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="GoingToStopPoint" hidden="true" id="6" name="_GoingToStopPoint" order="6"/>
+        <blocks/>
+        <events>
+            <event displayName="Start Position" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Moving back and forth" enabled="true" id="2" name="event-custom" order="3" repeats="true"/>
+            <event displayName="Updating the statement to move" enabled="true" id="3" name="step" order="4" repeats="false"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_7_7_Mainbehavior" classname="scripts.Design_7_7_Mainbehavior" desc="" description="" design="true" drawOrder="0" id="7" name="Main behavior" oid="-1" package="scripts" shared="false" type="scene">
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Player" hidden="false" id="1" name="_Player" order="0"/>
+        <region default="" defaultValue="" desc="" dropdown="" fullname="EndRegion" hidden="false" id="2" name="_EndRegion" order="1"/>
+        <scene default="" defaultValue="" desc="" dropdown="" fullname="TargetScene" hidden="false" id="3" name="_TargetScene" order="2"/>
+        <blocks/>
+        <events>
+            <event displayName="Player exiting the Region" enabled="true" id="1" name="step" order="1" repeats="false"/>
+            <event displayName="Enters Region" enabled="true" id="2" name="event-group-region" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_1" classname="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="8" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_2" classname="scripts.SceneEvents_2" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="9" name="SceneEvents_2" oid="-1" package="scripts." sceneid="2" shared="false" type="scene">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="7" attachedevent="true" class="scripts.ActorEvents_7" classname="scripts.ActorEvents_7" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="10" name="ActorEvents_7" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Moving" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Hitting the Player" enabled="true" id="2" name="event-collide-actortotype" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="10" attachedevent="true" class="scripts.ActorEvents_10" classname="scripts.ActorEvents_10" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="11" name="ActorEvents_10" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_12_12_Lifepoint" classname="scripts.Design_12_12_Lifepoint" desc="" description="" design="true" drawOrder="0" id="12" name="Lifepoint" oid="-1" package="scripts" shared="false" type="scene">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Lifepoint" hidden="false" id="1" name="_Lifepoint" order="0"/>
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Heart Actor" hidden="false" id="2" name="_HeartActor" order="1"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="List of Health" hidden="true" id="3" name="_ListofHealth" order="2"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Damage Delay" hidden="true" id="4" name="_DamageDelay" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Max lifepoints" hidden="true" id="5" name="_Maxlifepoints" order="4"/>
+        <blocks/>
+        <events>
+            <event displayName="Hitting a specific emeny" enabled="true" id="1" name="event-collide-typetotype" order="1" repeats="true"/>
+            <event displayName="Fixing the heart actor on screen" enabled="true" id="2" name="init" order="3" repeats="true"/>
+            <event displayName="Checking if the player is low on health" enabled="true" id="3" name="event-custom" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_3" classname="scripts.SceneEvents_3" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="14" name="SceneEvents_3" oid="-1" package="scripts." sceneid="3" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="2" name="draw" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="15" attachedevent="true" class="scripts.ActorEvents_15" classname="scripts.ActorEvents_15" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="15" name="ActorEvents_15" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="19" attachedevent="true" class="scripts.ActorEvents_19" classname="scripts.ActorEvents_19" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="17" name="ActorEvents_19" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_4" classname="scripts.SceneEvents_4" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="18" name="SceneEvents_4" oid="-1" package="scripts." sceneid="4" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="2" name="draw" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="21" attachedevent="true" class="scripts.ActorEvents_21" classname="scripts.ActorEvents_21" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="19" name="ActorEvents_21" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="23" attachedevent="true" class="scripts.ActorEvents_23" classname="scripts.ActorEvents_23" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="20" name="ActorEvents_23" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="26" attachedevent="true" class="scripts.ActorEvents_26" classname="scripts.ActorEvents_26" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="21" name="ActorEvents_26" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="28" attachedevent="true" class="scripts.ActorEvents_28" classname="scripts.ActorEvents_28" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="22" name="ActorEvents_28" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="30" attachedevent="true" class="scripts.ActorEvents_30" classname="scripts.ActorEvents_30" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="23" name="ActorEvents_30" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_5" classname="scripts.SceneEvents_5" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="24" name="SceneEvents_5" oid="-1" package="scripts." sceneid="5" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+        </events>
+    </snippet>
+</pack>

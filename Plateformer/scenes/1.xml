@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="3" desc="" eventsnippetid="8" extheight="1664" extwidth="1504" extx="-32" exty="-32" format="4.0.2" gravx="-0.0" gravy="85.0" height="1600" id="1" name="SecondLevel" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1440">
+    <layers>
+        <color-bg blue="255" green="204" red="0"/>
+        <background blendMode="normal" customScrollFactor="false" id="3" locked="true" name="Image" opacity="100" order="3" rid="9" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="0,255,0" id="1" locked="true" name="Background" opacity="100" order="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="true" name="Main" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="64,64,64" id="2" locked="false" name="Forground" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions>
+        <region b="64" g="64" h="128" id="0" name="Region 0" pts="4,0.0,128.0,38.0,128.0,38.0,0.0,0.0,0.0" r="64" type="box" w="38" x="1377" y="1405"/>
+    </regions>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="4" c="true" group="4" id="5" name="Enemy 4" order="0" sx="1.0" sy="1.0" x="109" y="1467" z="1">
+            <snippets>
+                <s enabled="true" id="5"/>
+                <s enabled="true" id="6">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="0"/>
+                    <prop id="2" list="0" val="0"/>
+                    <prop id="3" list="0" val="109"/>
+                    <prop id="4" list="0" val="1467"/>
+                    <prop id="5" list="0" val="75"/>
+                    <prop id="6" list="0" val="false"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="5" c="true" group="4" id="5" name="Enemy 5" order="1" sx="1.0" sy="1.0" x="195" y="1465" z="1">
+            <snippets>
+                <s enabled="true" id="5"/>
+                <s enabled="true" id="6">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="0"/>
+                    <prop id="2" list="0" val="0"/>
+                    <prop id="3" list="0" val="195"/>
+                    <prop id="4" list="0" val="1465"/>
+                    <prop id="5" list="0" val="75"/>
+                    <prop id="6" list="0" val="false"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="7" c="true" group="4" id="5" name="Enemy 7" order="2" sx="1.0" sy="1.0" x="297" y="1461" z="1">
+            <snippets>
+                <s enabled="true" id="5"/>
+                <s enabled="true" id="6">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="0"/>
+                    <prop id="2" list="0" val="0"/>
+                    <prop id="3" list="0" val="297"/>
+                    <prop id="4" list="0" val="1461"/>
+                    <prop id="5" list="0" val="75"/>
+                    <prop id="6" list="0" val="false"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="8" c="true" group="4" id="5" name="Enemy 8" order="3" sx="1.0" sy="1.0" x="359" y="1461" z="1">
+            <snippets>
+                <s enabled="true" id="5"/>
+                <s enabled="true" id="6">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="0"/>
+                    <prop id="2" list="0" val="0"/>
+                    <prop id="3" list="0" val="359"/>
+                    <prop id="4" list="0" val="1461"/>
+                    <prop id="5" list="0" val="75"/>
+                    <prop id="6" list="0" val="false"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="9" c="true" group="0" id="0" name="Player 9" order="0" sx="1.0" sy="1.0" x="682" y="170" z="0">
+            <snippets>
+                <s enabled="true" id="0"/>
+                <s enabled="true" id="2">
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                    <prop id="1" list="0" val="12"/>
+                    <prop id="2" list="0" val="false"/>
+                    <prop id="3" list="0" val="false"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="10" c="false" group="5" id="7" name="Enemy2 10" order="4" sx="1.0" sy="1.0" x="1138" y="1411" z="1"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="3">
+            <prop id="1" list="0" val="9"/>
+            <prop id="2" list="0" val=""/>
+        </s>
+        <s enabled="true" id="7">
+            <prop id="1" list="0" val="9"/>
+            <prop id="2" list="0" val="0"/>
+            <prop id="3" list="0" val="2"/>
+        </s>
+        <s enabled="true" id="12">
+            <prop id="1" list="0" val="3"/>
+            <prop id="2" list="0" val="10"/>
+            <prop id="3" list="1" val=""/>
+            <prop id="4" list="0" val="false"/>
+            <prop id="5" list="0" val="0"/>
+        </s>
+    </snippets>
+    <terrain>
+        <p pts="12,0.0,1376.0,0.0,1312.0,480.0,1312.0,480.0,0.0,1024.0,0.0,1024.0,1312.0,1440.0,1312.0,1440.0,1376.0,992.0,1376.0,992.0,32.0,512.0,32.0,512.0,1376.0" x="0.0" y="224.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>

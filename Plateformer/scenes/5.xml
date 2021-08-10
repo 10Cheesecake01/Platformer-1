@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="24" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.2" gravx="-0.0" gravy="0.0" height="480" id="5" name="EndScreen" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="255" green="102" red="51"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="28" name="Congrats 1" order="0" sx="0.939759" sy="1.0" x="-9" y="177" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+    <atlases members="" retainAtlases="true"/>
+</scene>
